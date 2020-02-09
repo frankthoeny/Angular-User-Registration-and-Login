@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+      <h3>All registered users:</h3>
+      <table class="table">
+        <caption>
+          List of users
+        </caption>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Full Name</th>
+            <th>Role</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.username }}</td>
+            <td>({{ user.firstName }} {{ user.lastName }})</td>
+            <td>{{user.role}}</td>
+            <td>
+              <button
+                type="button"
+                (click)="deleteUser(user.id)"
+                class="btn btn-outline-danger"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

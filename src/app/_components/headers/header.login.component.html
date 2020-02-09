@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1 *ngIf="currentUser; else greet">Hi {{ currentUser.firstName }}!</h1>
+  <hr class="my-4" />
+  <h2 *ngIf="currentUser; else content">You're logged in with Angular 8!!</h2>
+</div>
+
+<ng-template #greet><h1>Hello World!</h1></ng-template>
+<ng-template #content>
+  <h2>
+    Register now for the opportunity to connect with thousands of attendees and
+    vendors
+  </h2>
+</ng-template>
