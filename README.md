@@ -1,10 +1,9 @@
 # AngularUsersLoginRegister
 
 Recently updated: 
-[Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
-[ngx-Bootstrap](https://valor-software.com/ngx-bootstrap/#/) version 5.5.0.
-
-* Added customized Bootstrap Carousel with Image indicators - 02/10/2020.
+* 02/09/2020 - [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+* 02/09/2020 - [ngx-Bootstrap](https://valor-software.com/ngx-bootstrap/#/) version 5.5.0.
+* 02/10/2020 - Added customized Bootstrap Carousel with Image indicators.
 
 
 This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
