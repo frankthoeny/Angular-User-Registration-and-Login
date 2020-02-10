@@ -1,15 +1,17 @@
-<carousel
-  [interval]="interval"
-  [itemsPerSlide]="itemsPerSlide"
-  [singleSlideOffset]="singleSlideOffset"
-  [startFromIndex]="startFromIndex"
->
+<carousel [showIndicators]="false" [(activeSlide)]="activeSlideIndex">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li
+      *ngFor="let slide of slides; let index = index"
+      [ngClass]="{ active: index == activeSlideIndex }"
+      (click)="onClickMakeActive(index)"
+    >
+      <img [src]="slide.image" alt="image slide" />
+    </li>
+  </ol>
+
   <slide *ngFor="let slide of slides; let index = index">
-    <img
-      [src]="slide.image"
-      alt="image slide"
-      style="display: block; width: 100%;"
-    />
+    <img [src]="slide.image" alt="image slide" />
     <div class="carousel-caption">
       <h4>Slide {{ index }}</h4>
     </div>
