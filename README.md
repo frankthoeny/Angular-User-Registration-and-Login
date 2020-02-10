@@ -1,6 +1,11 @@
 # AngularUsersLoginRegister
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+Recently updated project with 
+[Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+[ngx-Bootstrap](https://valor-software.com/ngx-bootstrap/#/) version 5.5.0.
+
+This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+[angular-8-user-registration-and-login](https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial) example tutorial by Jason Watmore.
 
 ## Development server
 
