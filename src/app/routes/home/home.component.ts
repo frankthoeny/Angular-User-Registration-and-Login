@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   activeSlideIndex = 0;
+  myInterval = 0;
   slides = [
     {image: '/assets/images/nature/1.jpg'},
     {image: '/assets/images/nature/2.jpg'},
@@ -19,7 +20,8 @@ export class HomeComponent {
   ];
 
   onClickMakeActive(index) {
-    this.activeSlideIndex = index;    
+    this.activeSlideIndex = index;
+    this.myInterval = 0;
   }
   
 }
